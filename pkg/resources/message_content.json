@@ -1,0 +1,18 @@
+{
+  "localizations" : [
+    {
+      "language" : "ru",
+      "hello" : "\uD83D\uDD17 Создай сокращённую ссылку!\n\nХотите сделать свою ссылку более компактной? Используйте наш сервис для сокращения ссылок!\n\nПросто напишите в ответном сообщении команду и получите сокращённую версию вашей ссылки.\n\n`\uD83D\uDD17 /create [ссылка источника]`",
+      "good" : "\uD83D\uDD17 Новая ссылка: `%s`\n\n⏰ Срок действия: %s часов",
+      "bad" : "Проверьте, пожалуйста, структуру и содержание вашего сообщения",
+      "wrong" : "Что-то пошло не так"
+    },
+    {
+      "language" : "en",
+      "hello" : "\uD83D\uDD17 Create a shortened link!\n\nDo you want to make your link more compact? Use our service to shorten links!\n\nJust write a command in the reply message and get a shortened version of your link.\n\n`\uD83D\uDD17 /create [source link]`",
+      "good" : "\uD83D\uDD17 New link: `%s`\n\n⏰ Validity period: %s hours",
+      "bad" : "Please check the structure and content of your message.",
+      "wrong" : "Something went wrong"
+    }
+  ]
+}
