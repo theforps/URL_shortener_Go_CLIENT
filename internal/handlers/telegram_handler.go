@@ -70,7 +70,7 @@ func (tr *TgHandler) MessageHandler() {
 						errorMsg = fmt.Sprintf("не удалось вытянуть URL для редиректа: %v", err)
 						msg = parsedMessages.WrongMes
 					} else {
-						msg = fmt.Sprintf(parsedMessages.GoodMes, redirectUrl.URL, strconv.Itoa(5)) //string(rune(redirectUrl.LifeHours)))
+						msg = fmt.Sprintf(parsedMessages.GoodMes, redirectUrl.URL, strconv.Itoa(redirectUrl.DayLife*24)) //string(rune(redirectUrl.LifeHours)))
 					}
 				} else {
 					errorMsg = "не удалось спарсить пользовательский URL"
