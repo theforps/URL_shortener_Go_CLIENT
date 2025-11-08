@@ -19,7 +19,7 @@ A user sends a long link, and the bot responds with a short one.
 
 ### Quick start
 1. **Clone repository**
-```bash
+```shell
 git clone https://github.com/theforps/URL_shortener_Go_CLIENT.git
 cd URL_shortener_Go_CLIENT 
 ```
