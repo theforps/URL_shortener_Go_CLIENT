@@ -16,6 +16,7 @@ type UrlShortenerAPI struct {
 	client *http.Client
 }
 
+// NewUrlShortener creates API object that provides access to the creation of short links
 func NewUrlShortener() *UrlShortenerAPI {
 	return &UrlShortenerAPI{
 		client: &http.Client{
@@ -24,6 +25,7 @@ func NewUrlShortener() *UrlShortenerAPI {
 	}
 }
 
+// CreateShortUrl creates short URL from user's link
 func (us *UrlShortenerAPI) CreateShortUrl(ctx context.Context, configuration *config.Config, userUrl string) (redirectUrl *entities.Query, err error) {
 
 	urlDtoQuery := entities.Query{

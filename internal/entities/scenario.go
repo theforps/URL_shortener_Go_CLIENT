@@ -4,6 +4,7 @@ type Localization struct {
 	Scenarios []*Scenario `json:"localizations"`
 }
 
+// Scenario is object for telegram's messages
 type Scenario struct {
 	Language string `json:"language"`
 	HelloMes string `json:"hello"`

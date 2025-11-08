@@ -8,6 +8,7 @@ type Config struct {
 	Language     string
 }
 
+// NewConfig return configuration of program
 func NewConfig() *Config {
 	return &Config{
 		ShortenerURL: getEnv("URL_SHORTENER_SERVER"),
@@ -16,6 +17,7 @@ func NewConfig() *Config {
 	}
 }
 
+// getEnv read strings from .env file
 func getEnv(key string) (value string) {
 	value, _ = os.LookupEnv(key)
 	return
